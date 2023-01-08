@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+  </head>
+  <body>
+
+  <!-- 버튼 -->
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <a href='#' class='btn btn-warning'>앵커 태그 버튼</a>
+    <input type="btn" value='아이디 입력 창' class='btn btn-light btn-sm'>
+
+  <!-- 백그라운드 -->
+    <div class="p-3 mb-2 bg-primary border border-danger"> <!-- 우선순위는 부모태그에서 색상이나 설정 지정한 것이 우선순위가 더 높다. -->
+      <h1 calss='bg-dark'>색상</h1>
+      <a href="#" class='link-light text-muted'>앵커태그</a>
+    </div>
+  
+  <!-- 글자 크기 -->
+    <p class="fs-1">font size 1</p>
+    <h1>실제 h1 태그</h1>
+    <p class="h1">p태그 이지만 디자인만 h1이랑 같게 하고 싶을 때</p>
+    <h1 class='display-1'>h1 보다 더 크게 쓰고 싶을 때 display 사용</h1>
+
+  <!-- 텍스트 정렬 -->
+    <p class="text-start"> 왼쪽 정렬 (start)</p>
+    <p class="text-center"> 가운데 정렬 (center)</p>
+    <p class="text-end"> 오른쪽 정렬 (end)</p>
+
+  <!-- 폰트 두께 -->
+    <p class="fw-bold">볼드체</p>
+    <p class="fw-bolder">부모 대비 두껍게는 bolder</p> 
+    <p class="fw-normal">노말</p>
+    <p class="fw-light">얇게</p>
+    <p class="fst-italic"> 이탤릭체</p> 
+    <p class="fw-normal"> <span class='fw-bold'>특정 구간</span> 강조</p><!-- 특정 구간만 강조하고 싶다면 span 태그로 그 구간만 묶어주면 된다 -->
+    
+  <!-- 줄간격 -->
+    <p class="lh-1"> 아주 좁게 :This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <p class="lh-sm"> 좁게 : This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <p class="lh-base"> 기본 : This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <p class="lh-lg"> 넓게 : This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+  <!-- 텍스트 밑줄 효과 -->
+    <p class="text-decoration-underline">밑줄</p>
+    <p class="text-decoration-line-through">취소선</p>
+    <a href="#" class="text-decoration-none">앵커태그 밑줄 없애기</a>
+  
+  <!-- 패딩 (테두리 안쪽 여백 )-->
+    <div class="p-2 fs-1 bg-primary text-white">
+      p-0 ~ p-5 까지 있는데 p-3이 글자크기, p-0은 여백을 주지 않는 것이고, 숫자가 커지면 더 커짐
+    </div>
+    <div class="px-5 fs-1 bg-success text-white">
+      t위 b아래 s스타트 e엔드 x축왼쪽오른쪽 y축위아래 으로 방향 줄 수 있음 (특정 방향에만 패딩을 줄 수 있음 p방향-숫자)
+    </div>
+  
+  <!-- 마진 (테두리 바깥쪽 여백) -->
+    <div class="me-auto p-2 fs-1 bg-primary text-white" style="width:200px">
+      마진은 m-auto로 가운데 정렬할 수 있고, me-auto로 최대 마진 줄 수 있음
+      ms-auto는 스타트로 왼쪽 최대마진 me-auto는 엔드로 오른족 최대마진,
+      단, auto를 쓰려면 style="width:숫자" 값을 지정해줘야한다.
+    </div>
+    <div class="my-5 fs-1 bg-success text-white">
+      t위 b아래 s스타트 e엔드 x축왼쪽오른쪽 y축위아래 으로 방향 줄 수 있음 (특정 방향에만 패딩을 줄 수 있음 p방향-숫자)
+    </div>
+  
+  <!-- 테두리(border) -->
+    <div class="border border-1 border-primary p-5 m-3"></div>
+    <div class="border border-2 border-secondary p-5 m-3"></div>
+    <div class="border border-3 border-success p-5 m-3"></div>
+    <div class="border border-4 border-danger p-5 m-3"></div>
+    <div class="border-top border-5 border-warning p-5 m-3"></div>
+    <div class="border-start border-end border-5 border-warning p-5 m-3"></div>
+    <div class="border-bottom border-5 border-warning p-5 m-3"></div>
+    <div class="border border-5 border-primary p-5 m-3 border-opacity-25">불투명</div>
+    <div class="border border-5 border-primary p-5 m-3 rounded-5">라운디드</div>
+    <div class="border border-5 border-primary p-5 m-3 rounded-end-circle">라운디드 엔드 서클</div>
+    <div class="border border-5 border-primary p-5 m-3 rounded-pill">라운드 알약</div>
+    <div class="border border-5 border-primary p-5 m-3 rounded-circle">라운드 서클</div>
+    <div class="border border-5 border-primary p-5 m-3 rounded-circle" style="width:200px; height:200px">너비 높이 맞추면 정원</div>
+    
+  <!-- 컨테이너 : 반응형 웹사이트 기본적인 레이아웃을 잡아준다 -->
+    <div class="container text-bg-primary fs-3">
+      <p>담고 싶은 컨텐츠 넣으면 됨</p>
+    </div>
+    <div class="container-fluid text-bg-primary fs-3">
+      <p>fluid는 마진 없이 전체를 꽉 채워줌</p>
+    </div>
+  
+  <!-- 플렉스 박스 -->
+    
+  
+  
+  <!--  -->
+  
+
+  <!--  -->
+
+
+  <!--  -->
+
+
+  <!--  -->
+  
+  
+  <!--  -->
+
+
+  <!--  -->
+
+
+  <!--  -->
+
+
+  <!--  -->
+
+
+  <!--  -->
+
+
+
+  
+    <script src="../js/bootstrap.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>
