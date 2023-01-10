@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
     crossorigin="anonymous">
+
   </head>
   <body>
 
@@ -92,39 +93,211 @@
       <p>fluid는 마진 없이 전체를 꽉 채워줌</p>
     </div>
   
-  <!-- 플렉스 박스 -->
+  <!-- 플렉스 박스 : 부모 컨테이너 안에 자식 아이템이 배치가 목적 -->
+    <!-- 정렬시 주축축(열):justify / 교차축(행):align -->
+    <div class="d-flex bg-success">
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+    </div>
+  
+    <!-- 주축방향 정렬 -->
+    <div class="d-flex bg-success justify-content-center">
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+    </div>
+
+    <div class="d-flex bg-success justify-content-between">
+      <div class="bg-warning p-5 m-1">between은</div>
+      <div class="bg-warning p-5 m-1">양 극단으로</div>
+      <div class="bg-warning p-5 m-1">정렬</div>
+    </div>
+
+    <div class="d-flex bg-success justify-content-around">
+      <div class="bg-warning p-5 m-1">around는</div>
+      <div class="bg-warning p-5 m-1">한 아이템 기준 좌우 방향 동일간격</div>
+      <div class="bg-warning p-5 m-1">위치</div>
+    </div>
+
+    <div class="d-flex bg-success justify-content-evenly">
+      <div class="bg-warning p-5 m-1">evenly는</div>
+      <div class="bg-warning p-5 m-1">모든 아이템 간격이</div>
+      <div class="bg-warning p-5 m-1">동일한 정렬</div>
+    </div>
+
+    <!-- 교차축 정렬 -->
+    <!-- vh-100은 뷰포트 100퍼센트의 높이로 맞춘다는 뜻, 100만 됨 -->
+    <div class="d-flex vh-100 bg-primary align-items-baseline">
+      <div class="bg-warning p-5 m-1">baseline </div>
+      <div class="bg-warning p-5 m-1">아이템위치</div>
+      <div class="bg-warning p-3 m-1">맞춰줌</div>
+    </div>
+
+    <div class="d-flex vh-100 bg-success">
+      <!-- aline-self는 개별 박스에 적용할 때 사용함 -->
+      <div class="bg-warning p-5 m-1 align-self-center">center는 중앙</div>
+      <div class="bg-warning p-5 m-1 align-self-stretch">stretch는 늘려서 꽉 채움</div>
+      <div class="bg-warning p-3 m-1 align-self-end">end는 맨 밑</div>
+    </div>
+  
+    <!-- 아이템 줄바꿈  -->
+    <div class="d-flex vh-100 bg-info flex-wrap justify-content-envenly">
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+    </div>
+  
+    <!-- 여러 줄 교차축(행) 정렬  -->
+    <div class="d-flex vh-100 bg-info flex-wrap align-content-start">
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+    </div>
+
+    <div class="d-flex vh-100 bg-info flex-wrap align-content-evenly">
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+      <div class="bg-warning p-5 m-1 align-self-start">아이템</div>
+    </div>
+
+    <!-- 주축과(열) 교차축(행) 전환 (정렬 속성도 같이 바뀜) -->
+    <div class="d-flex vh-100 flex-column justify-content-end bg-success">
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+      <div class="bg-warning p-5 m-1">아이템</div>
+    </div>
+  
+  <!-- 그리드 : 레이아웃을 만들기 위한 시스템 -->
+    <!-- 행을 먼저 만들고 그 행 안에 열을 배치하는 구조 (컨테이너>로우>칼럼)
+        1로우를 12개의 균일한 칼럼으로 나눠서 생각한다. 숫자 안적으면 남은 영역을 동일한 간격으로 나눈다. -->
+    <div class="container">
+      <div class="row my-3">
+        <div class='col-4 bg-danger'>col-4</div>
+        <div class="col-2 bg-warning">col-2</div>
+      </div>
+      <div class="row my-3">
+        <div class='col-5 bg-primary'>col-5</div>
+        <div class='col bg-danger'>나머지 균등</div>
+        <div class="col bg-warning">나머지 균등</div>
+      </div>
+      <div class="row my-3">
+        <div class='col-auto bg-primary'>오토는 필요한 만큼만 확보</div>
+        <div class='col bg-danger'>나머지 균등</div>
+        <div class="col bg-warning">나머지 균등</div>
+      </div>
+    </div>
+
+
+
+  <!-- 반응형 레이아웃 -->
+    <!-- 
+    브레이크 포인트 
+      -    핸드폰 세로(디폴트임) : 576px미만
+      - sm 핸드폰 가로 태블릿 : 576px이상
+      - md : 769px이상
+      - lg : 992px이상
+      - xl : 1200px이상
+      - xxl : 1400px이상
+    -->
+
+    <!-- 
+      각 사이즈별 설정 : 다 사용하지 않고 기본, 스몰, 라지 3개 정도만 설정한다.
+        col-6 -> 한줄에 2개
+        col-sm-4 -> 한줄에 3개
+        col-md-?
+        col-lg-3 -> 한줄에 4개 : 이 이상 설정이 없으면 이것 까지만 적용 된다.
+        col-xl-?
+        col-xxl-?
+    -->
     
-  
-  
-  <!--  -->
-  
+  <div class="container overflow-hidden">
+    <!-- 거터 g-(0~5) : 컨텐츠 간의 여백, 숫자가 큰 거터를 쓸 경우 컨테이너에 overflow-hidden 처리까지 해줘야한다. -->
+    <!-- gx-3, gy-2 이런식으로도 넣을 수 있음 -->
 
-  <!--  -->
+    <div class="row g-4">
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-2">
+        <div class="bg-danger text-white p-3">col</div>
+      </div>
+    </div>
+  </div>
 
+  <!-- 에밋 : 자동완성기능 태그.클래스  태그#아이디 부모태그>자식요소 -->
+  <!-- .클래스  #아이디  부모요소>자식요소  형제요소+형제요소  {내용}  $로일련번호표시도가능 -->
+    <!-- h1.text-danger -->
+    <h1 class="text-danger">태그.클래스</h1>
+    <!-- button.btn.btn-primary.btn-lg -->
+    <button class="btn btn-primary btn-lg">버튼</button>
+    <!-- .bg-danger.p-4.m-2*2 -->
+    <div class="bg-danger p-4 m-2"></div>
+    <div class="bg-danger p-4 m-2"></div>
+    <!-- ul>li*3 -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- ul>li{아이템}$*3 -->
+    <ul>
+      <li>아이템1</li>
+      <li>아이템2</li>
+      <li>아이템3</li>
+    </ul>
 
-  <!--  -->
-
-
-  <!--  -->
-  
-  
-  <!--  -->
-
-
-  <!--  -->
-
-
-  <!--  -->
-
-
-  <!--  -->
-
-
-  <!--  -->
-
-
-
-  
     <script src="../js/bootstrap.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
     crossorigin="anonymous"></script>
