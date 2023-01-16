@@ -1,0 +1,64 @@
+/* 폰트 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo-font {
+    font-family: 'Sunflower', sans-serif;
+}
+
+/* 네비게이션 섹션 */
+    /* 네비게이션 바 마우스 올렸을 때 색상 변화 */
+    .nav-link.active,
+    .nav-link:hover {
+        color: darkblue !important;
+        font-weight: bold;
+    }
+
+/* 헤더 섹션 */
+    /* 평상시 흑백 50% */
+    #headerCarousel img {
+        filter: grayscale(50%)
+    }
+    /* 마우스 올릴 시 흑백 없애기 */
+    #headerCarousel:hover img {
+        filter: grayscale(0%)
+    }
+
+/* 포트폴리오 섹션 */
+
+    /* 커버이미지 호버 시 확대 */
+    .card-img-top:hover{
+        transform: scale(1.1);
+    }
+
+    /* 트랜스폼 전환 속도 제어 */
+    .card-img-top{
+        transition: transform .7s;
+    }
+
+    /* 카드배너 */ 
+    .banner{
+        background-image:  url(./img/grass.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+/* 연락처 섹션 */
+    .contact-bg{
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)), url(./img/grass.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+/* 풋터 섹션 */
+    /* #foot-text{
+        color: darkgreen;
+    } */
