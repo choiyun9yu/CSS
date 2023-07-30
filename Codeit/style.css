@@ -42,7 +42,7 @@ ul > li {
 table {
   border: 3px solid red;
   /* border-collapse : collapse; 테두리 사이 간격 없애기 */
-  border-spacing: 5px;
+  border-spacing: 5px; /* 테두리 사이 공간 주기 */
 }
 th, td {
   border: 1px solid blue;
