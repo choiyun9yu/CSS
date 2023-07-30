@@ -1,0 +1,68 @@
+
+/* 1. Position */
+    /* 웹 문서의 흐름은 기본적으로 두 가지 블록과 인라인이 있다. */
+    /* 블록은 한 태그가 가로 다 먹어버리는 거 */
+    /* 인라인은 그 태그 끝나면 바로 다음 태그가 이어지는 거 */
+    /* 인라인을 블록처럼 쓰고 싶으면 inlice-block 쓰면 됨 */
+    
+    /* position : 일반적인 흐름을 벗어나서 작성하고 싶을 때 사용 */
+    /* position 속성 : 위치의 기준을 설정 */
+    /* top, right, bottom, left : 구체적인 위치를 설정, 값이 +면 영역 안쪽 방향, 값이 -면 영역 바깥쪽 방향 */
+
+    /* 1-1. 종류 */
+    /* static : position's default, 원래 있어야할 위치에 배치, 일반적인 글의 흐름을 따름 */
+    /* relative : 원래 있어야할 곳은 비워워두고 그곳에서 상대적인 위치로 이동한다. / 마진과 다른점은 다른 애들과 상관없이 이 애만 이동한다.*/
+    /* absolute : 가장 가까운 포지셔닝된 조상의 좌상단을 기준으로 위치를 잡는다. / 원래배치에서 자리를 차지 하지 않게 된다. */
+    /* fixted : 네비게이션 바같은 곳에 사용 / 위치가 고정 / 원래배치 자리를 차지하지 않게 된다. */
+    /* sticky : 공간을 차지하고 있다가 지정 위치에 닿으면 fixed처럼 거기에 고정됨, 부모요소에 종속됨 */
+    
+    /* 1-2. 앞뒤 */
+    /* z-index : 웹문서에 앞, 뒤의 순서를 정함 */
+    /* 이것을 설정하지 않으면 기본적으로 코드가 밑에 위치할 수록 앞에 위치해서 덮는다. */
+    /* 음수도 쓸 수 있음, 값이클수록 앞쪽으로 보임 */
+
+.box {
+    padding: 30px;
+    /* display: inline; block 을 inline처럼 사용하게 해줌.  */
+}
+
+.red {
+    background-color: #e46e80;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* fixed도 width height를 지정하지 않으면 컨텐츠 만큼의 크기를 가진다. */
+    /* left와 right를 지정해주거나 width를 표시해주면 그만큼 공간을 차지한다. */
+
+    /* 근데 fixed를 사용하면 본문 내용을 가릴 수 있다. 이런 경우 마진을 사용하면 된다. */
+    /* 본문 내용을 div태그로 감싸고 마진을 네비게이션바 높이만큼 주면 된다 */
+}
+
+.main {
+    margin-top: 120px;
+}
+
+.blue {
+    background-color: #5195ee;
+    /* position: absolute; 지금 바디 태그를 기준으로 포지셔닝 되고 있음 */
+    /* top: 60px;  */
+    /* absolute는 width height를 지정하지 않으면 컨텐츠 만큼의 크기를 가진다. */
+    /* left와 right를 지정해주거나 width를 표시해주면 그만큼 공간을 차지한다. */
+    /* inset: 0; 옵션을 주면 부모 태그 사이즈에 딱 맞게 크기를 맞출 수 있다. */
+}
+.green {
+    background-color: #32b9c1;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    z-index: 1;
+}
+.orange {
+    background-color: #f18575;
+    position: sticky;
+    top: 60px; /* top을 기준으로 60px 떨어진 곳에 위치하면 고정됨*/
+}
+.purple {
+
+}
