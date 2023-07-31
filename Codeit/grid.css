@@ -1,0 +1,88 @@
+/* 3. Grid : flex-box가 요소를 한방향으로 배치하는 것이라면 grid는 가로세로 두방향으로 배치한다. */
+/*           그리드는 요소를 왼쪽에서 오른쪽으로 그리고 위에서 아래로 배치한다. */
+/*           각 칸을 나누는 그리드 라인을 긋고 한칸을 그리드셀이라한다. 바둑판 처럼 배치 가능 */
+
+    /* 3-1. grid-template-rows(columns) : 격자 나누기  */
+        /* grid-template-columns: 100px 300px 100px;   세로 너비 사이즈 정함  */
+        /* grid-template-rows: 200px 200px 100px;      가로 높이 사이즈 정함 */
+        /* 한번에 쓰기 */
+        /* grid-template: rows값 먼저 쓰고 / columns 값 써주면 된다 */
+        
+        /* px로 정한그리드 셀의 크기는 고정이다.  */
+        /* 비율로 크기를 정하려면 1fr 1fr 1fr 이런식으로 입력하면 1:1:1 비율로 나뉜다. */
+        /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+
+        /* 크기에서 최대 최소 정하는 방법 */
+        /* grid-template: 
+                1fr 1fr 1fr / minmax(200px, 300px) minmax(200px, 300px) minmax(200px, 300px);       
+                !주의 최대값에만 fr을 쓸 수 있음 */
+
+        /* 6등분하기  */
+        /* grid-template:
+                1fr 1fr 1fr /
+                repeat(6, 1fr) */
+
+    /* 3-2. gap : 간격 */
+        /* gap: 16px 32px; 하나만 쓰면 사방, 두개쓰면 세로, 가로 순서*/ 
+
+
+    /* 3-3. grid-auto-rows(columns) : 크기 미리 정하기 */
+        /* grid-auto-rows: 200px; grid-template에서 명시적으로 사이즈 정하지 않았을 때 참조할 디폴트 값 설정 */
+        /* grid-auto-rows: 50px 100px 200px 값을 여러개 쓰면 값을 번갈아가면서 설정 */
+
+    /* 3-4. grid-row(column), span : 원하는 위치에, 원하는 크기로 배치 */
+        /* 그리드 라인 번호로 설정, 여러라인에 걸치려면 시작라인/끝라인 으로 설정 */
+        /* grid-row: 3 / span 2; 로우방향 3번 라인부터 2칸*/
+        /* grid-column: 2/ span3; 컬럼방향 2번 라인부터 3칸*/
+
+
+    /* 3-5. grid-area, grid-template-areas : 이름으로 배치 */
+
+    .body {
+        background-color: #f9fafc;
+        margin: 60px
+    }
+
+    .container {
+        border: 5px dashed #cacfd9;
+        width: 500px;
+        height: 500px;
+        display: grid;
+        /* grid-template-columns: 100px 300px 100px;   세로 너비 사이즈 정함  */
+        /* grid-template-rows: 200px 200px 100px;      가로 높이 사이즈 정함 */
+        /* grid-template: rows값 먼저 쓰고 / columns 값 써주면 된다 */
+            /* 1fr 1fr 1fr / minmax(200px, 300px) minmax(200px, 300px) minmax(200px, 300px); */
+        grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+        
+        /* 간격 추가 */
+        gap: 16px 32px;
+
+        /*  */
+    }
+
+    .box {
+        border-radius: 15px;
+        color: #f9fafc;
+        padding: 10px;
+    }
+
+.red {
+background-color: #e46e80;
+}
+
+.green {
+    background-color: #32b9c1;
+
+}
+
+.blue {
+    background-color: #5195ee;
+}
+
+.purple {
+    background-color: #9933ff;
+}
+
+.orange {
+    background-color: #f18575;
+}
