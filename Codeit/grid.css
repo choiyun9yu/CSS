@@ -31,12 +31,21 @@
         /* grid-auto-rows: 50px 100px 200px 값을 여러개 쓰면 값을 번갈아가면서 설정 */
 
     /* 3-4. grid-row(column), span : 원하는 위치에, 원하는 크기로 배치 */
-        /* 그리드 라인 번호로 설정, 여러라인에 걸치려면 시작라인/끝라인 으로 설정 */
+        /* 그리드 라인 번호로 설정, 여러라인에 걸치려면 시작라인/끝라인, 시작라인/ span 몇칸 으로 설정 */
+        /* -숫자는 뒤에서부터 카운트임 */
         /* grid-row: 3 / span 2; 로우방향 3번 라인부터 2칸*/
         /* grid-column: 2/ span3; 컬럼방향 2번 라인부터 3칸*/
 
 
     /* 3-5. grid-area, grid-template-areas : 이름으로 배치 */
+        /* 각 요소에 이름을 붙이기 이름으로 배치하기 */
+        /* grid-area: r; */
+
+        /* 이름으로 배치하기 */
+        /* grid-template-areas: 
+        "r g"
+        "r b"; */
+
 
     .body {
         background-color: #f9fafc;
@@ -52,12 +61,15 @@
         /* grid-template-rows: 200px 200px 100px;      가로 높이 사이즈 정함 */
         /* grid-template: rows값 먼저 쓰고 / columns 값 써주면 된다 */
             /* 1fr 1fr 1fr / minmax(200px, 300px) minmax(200px, 300px) minmax(200px, 300px); */
-        grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         
         /* 간격 추가 */
         gap: 16px 32px;
 
-        /*  */
+        /* 이름으로 배치 */
+        grid-template-areas: 
+        "r g"
+        "r b";
     }
 
     .box {
@@ -67,16 +79,19 @@
     }
 
 .red {
-background-color: #e46e80;
+    background-color: #e46e80;
+    /* 그리드에 이름 부여 */
+    grid-area: r;
 }
 
 .green {
     background-color: #32b9c1;
-
+    grid-area: g;
 }
 
 .blue {
     background-color: #5195ee;
+    grid-area: b;
 }
 
 .purple {
