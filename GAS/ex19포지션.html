@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+        }
+        #div1{
+            background-color: red;
+            /* 
+                relative : 생성된 초기 위치에 상하좌우로 움직일 때 사용
+            */
+        }
+        #div2{
+            background-color: green;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            /* 
+                absolute : 
+            */
+        }
+        #div3{
+            background-color: blue;
+            position: relative;
+        }
+        #div4{
+            background-color: blueviolet;
+            position: absolute;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <div id="div2"></div>
+    <div id="div3"><div id="div4"></div></div>
+</body>
+</html>
