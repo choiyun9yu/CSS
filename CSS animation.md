@@ -1,19 +1,4 @@
-# CSS
-
-[button](https://inpa.tistory.com/entry/CSS-%F0%9F%92%8D-%EB%B2%84%ED%8A%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%AA%A8%EC%9D%8C)
-
-### CSS Custom properties(--\*)
-
-사용자 지정 속성은 적용 스코프를 {}로 설정  
-하이픈 두개(--)와 속성명으로 선언하고 (:) 뒤에 값을 입력
-
-    body{
-        --변수명 : 속성;
-    }
-
-    example{
-        옵션 : var(--변수명, 대체값을 두번째 인자로 넣을 수있다.)
-    }
+# Animation
 
 ### float와 overflow
 
@@ -74,6 +59,13 @@ float 속성을 부여한 요소의 다음 요소는 float 속성을 부여한 �
 -   rotateX(x) : 요소를 X축으로 x각도 회전시킨다. | +/- 각도(deg)
 -   rotateY(y) : 요소를 Y축으로 y각도 회전시킨다. | +/- 각도(deg)
 -   rotateZ(z) : 요소를 Z축으로 z각도 회전시킨다. | +/- 각도(deg)
+
+#### ease
+
+-   ease : slow - quick - slow
+-   ease-in : normal - quick
+-   ease-out : normal - out
+-   ease-int-out : slow - normal - quick
 
 ### 3. animation
 
