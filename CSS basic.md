@@ -134,3 +134,12 @@ block 태그와 inline 태그의 서로 다른 특성을 사용하여 다르게 
 ### 14. position
 
 ### 15. cursor
+
+## 추가
+
+### 1. 그라데이션능
+
+(상황) 백그라운드에 그라데이션 주기
+
+    background: linear-gradient(color1, color2)         // default는 to bottom(위쪽 color1, 아래쪽 color2)
+    background: linear-gradient(to top, color1, color2) // 방향은 to top, to bottom, to right, to left, (각도)deg 로 지정 가능
