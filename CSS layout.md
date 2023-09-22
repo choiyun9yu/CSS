@@ -1,5 +1,20 @@
 # Layout
 
+## 0. Position
+
+-   relative : 요소 자기 자신을 기준으로 배치
+-   absolute : 부모(조상) 요소를 기준으로 배치
+-   fixed : 뷰포트 기준으로 배치
+-   stickey : 스크롤 영역 기준으로 배치
+
+#### 기타
+
+현재 뷰포트의 높이에서 70픽셀을 뺀 값으로 설정
+
+    .gcs-height{
+        height: calc(100vh - 20px)
+    }
+
 ## 1. flexbox
 
 flexbox : 일차원으로 요소를 배치하는 방식, 가로 or 세로
