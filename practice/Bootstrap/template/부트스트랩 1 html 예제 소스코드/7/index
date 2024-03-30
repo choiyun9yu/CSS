@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거 레시피</title>
+</head>
+
+<body style="text-align: center; background-color:#FFD941;">
+
+    <img src="images/burger.png" alt="통새우 버거">
+    <h1>통새우 민트 버거 레시피</h1>
+    <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iste.</em></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda libero <br>quibusdam voluptatem. Consequatur
+        accusamus quaerat possimus <br>totam non cupiditate dolor odit voluptas voluptates! Commodi accusamus
+        <br>laborum
+        tempora, neque est corrupti.<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Assumenda libero
+        quibusdam
+        voluptatem. Consequatur<br>
+        accusamus quaerat possimus totam non cupiditate<br> dolor odit voluptas voluptates! Commodi accusamus<br>
+        laborum
+        tempora, neque est corrupti.
+    </p>
+    <a href="index-video-연습용.html" style="background-color: red; color: white;">영상 보기</a>
+    <br>
+    <br>
+    <br>
+    <hr width="50">
+    <br>
+    <br>
+
+    <h2>🥑 재료</h2>
+    <ul style="list-style: none;">
+        <li>햄버거 빵 2개</li>
+        <li>밀가루 10g</li>
+        <li>튀김가루 10g</li>
+        <li>민트 한 웅큼</li>
+        <li>토마토 1개</li>
+        <li>양파 1개</li>
+        <li>양상추 2장</li>
+        <li>레몬 1/4조각</li>
+        <li>소금, 후추 약간</li>
+        <li>타르타르 소스</li>
+    </ul>
+    <br>
+    <br>
+    <hr width="50">
+    <br>
+    <br>
+
+    <h2>🍥 레시피</h2>
+    <br>
+    <table style="margin: auto; text-align: left;">
+        <tr style="background-color:black; height: 50px; text-align: center; color:#FFD941">
+            <th colspan="2">조리 순서</th>
+        </tr>
+        <tr>
+            <td><img src="images/recipe1.png" alt="빵 자르는 모습"></td>
+            <td>
+                <strong>step 1</strong><br>
+                Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Commodi, non. <br>Ratione possimus enim
+                animi distinctio.Lorem ipsum dolor,<br> sit amet consectetur <br>adipisicing elit. Commodi, non.
+                <br>Ratione possimus enim
+                animi distinctio.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>step 2</strong><br>
+                Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Commodi, non. <br>Ratione possimus enim
+                animi distinctio.Lorem<br> sit amet consectetur <br>adipisicing elit. Commodi, non.
+                <br>Ratione possimus enim
+                animi distinctio.
+            </td>
+            <td>
+                <img src="images/recipe2.png" alt="통새우 버거 완성">
+            </td>
+
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr width="50">
+    <br>
+    <br>
+
+    <h2>🍔 영양 정보</h2>
+    <br>
+    <table style="margin: auto; width: 300px">
+        <caption>통새우 민트 버거 영양 성분</caption>
+
+        <thead style="background-color: black; color:#FFD941">
+            <tr>
+                <th>성분</th>
+                <th>함량</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>탄수화물</td>
+                <td>50g</td>
+            </tr>
+            <tr>
+                <td>단백질</td>
+                <td>10g</td>
+            </tr>
+            <tr>
+                <td>지방</td>
+                <td>10g</td>
+            </tr>
+            <tr>
+                <td>나트륨</td>
+                <td>1g</td>
+            </tr>
+        </tbody>
+
+        <tfoot style="background-color: orange;">
+            <tr>
+                <td>칼로리</td>
+                <td>500kcal</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <hr width="50">
+    <br>
+    <br>
+</body>
+
+</html>
